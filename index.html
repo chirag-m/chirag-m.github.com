@@ -1,0 +1,79 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./jquery-ui/css/jqueryui.css" />
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript" src="./jqueryui.js"></script>
+	<script>
+	$(function() {
+		$( "#accordion" ).accordion();
+	});
+	</script>
+	<style>
+	label
+	{
+
+		margin-left:2px;
+	}
+	input
+	{
+		padding-right:10px;
+	}
+	</style>
+<title>Trying out bootstrap</title>
+</head>
+<body>
+
+<div class="span3 offset4" style="margin-top:20px; position:absolute; float:left;">
+<img src="http://mquotient.net/_layout/images/logo.png">
+</div>
+<div class="span4 offset11">
+	<form class="well form-search">
+        <input style="height:30px" class="input-medium search-query" type="text"></input>
+		<button type="submit" class="btn">Search</button>
+    </form>
+</div>
+<div id="accordion" class="span5" style="width:445px; height:50px; margin-top:100px; margin-left:300px;">
+	<h3><a href="#">Log in</a></h3>
+	<div class="offset3">
+		<form action="#" class="well form-search">
+        <div>
+			<label style="display:block;" for="email">Email: <input name="email" style="float:right;" type="email">
+			</label>
+		</div>
+		<div>
+			<label style="display:block;" for="password">Password: 			<input name="password" style="float:right;" type="password"></label>
+
+        </div>
+               <label class="checkbox">
+        <input type="checkbox"> Keep me signed in
+			<!--using button class to create the login button-->
+			<br />
+			<a href="#" class="btn" style="margin-left:-20px; margin-top:10px">Login</a>
+			<a style="margin-left:100px; font-size:11px;" href="#"> Forgot my password</a>
+		<br />
+	</label></form></div>
+
+	<h3><a href="#">Register</a></h3>
+        <div class="span5">
+		<form class="well form-search" action="#">
+        <div><label style="display:block;">Email: <input style="float:right;" type="email"></label></div>
+        <div><label style="display:block;">Password: <input name="password" style="float:right;" type="password"></label></div>
+        <div><label for="password" style="display:block;">Confirm Password:        <input name="password" style="float:right;" type="password"> </label></div>
+        <div class="controls" id="FileInput" style="height:30px;">
+        <label style="margin-top:2px;">Upload Profile Picture:
+            <input type="file" style="float:right; margin-top:-2px; margin-right:-240px;" size="2px">
+        </label></div>
+        <label class="checkbox">
+        <input type="checkbox"> I've read the <a href="#">terms and conditions</a>
+        <br>
+		<a href="#" class="btn">Register</a>
+</div>
+
+</label></form></div>
+
+
+
+</body>
+</html>
